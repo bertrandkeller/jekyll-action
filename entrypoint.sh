@@ -124,7 +124,7 @@ else
   echo "::debug::Jekyll debug is off"
 fi
 
-JEKYLL_ENV=${INPUT_JEKYLL_ENV} bundle exec ${BUNDLE_ARGS} jekyll build -s ${GITHUB_WORKSPACE}/${JEKYLL_SRC} -d ${TARGET_DIR} ${INPUT_JEKYLL_BUILD_OPTIONS} ${VERBOSE} 
+JEKYLL_ENV=${INPUT_JEKYLL_ENV} bundle exec ${BUNDLE_ARGS} jekyll build -s ${GITHUB_WORKSPACE}/${JEKYLL_SRC} -d _static ${INPUT_JEKYLL_BUILD_OPTIONS} ${VERBOSE} 
 echo "Jekyll build done"
 
 if [ "${INPUT_BUILD_ONLY}" = true ]; then
