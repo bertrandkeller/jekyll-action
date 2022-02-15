@@ -85,9 +85,6 @@ echo "::debug::Remote is ${REMOTE_REPO}"
 BUILD_DIR="${GITHUB_WORKSPACE}/../jekyll_build"
 echo "::debug::Build dir is ${BUILD_DIR}"
 
-mkdir $BUILD_DIR
-cd $BUILD_DIR
-
 if [ -n "${INPUT_TARGET_PATH}" ] && [ "${INPUT_TARGET_PATH}" != '/' ]; then
   TARGET_DIR="${BUILD_DIR}/${INPUT_TARGET_PATH}"
   echo "::debug::target path is set to ${INPUT_TARGET_PATH}"
