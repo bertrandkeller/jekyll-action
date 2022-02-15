@@ -139,8 +139,6 @@ if [ "${GITHUB_REF}" = "refs/heads/${remote_branch}" ]; then
   exit 1
 fi
 
-cd ${BUILD_DIR}
-
 # No need to have GitHub Pages to run Jekyll
 touch .nojekyll
 
